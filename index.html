@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crazy Fitness</title>
+  </head>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    /* CSS Reset */
+    body {
+      margin: 0px;
+      padding: 0px;
+      background: url("img/bg.jpg");
+      color: white;
+      font-family: "Baloo 2", cursive;
+    }
+    .left {
+      /*border: 2px solid black */
+      display: inline-block;
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      text-align: center;
+      font-size: 20px;
+      color: #f4da00;
+    }
+    .left img {
+      width: 136px;
+    }
+    .mid {
+      /*border: 2px solid green;*/
+      display: block;
+      margin: 23px auto;
+      width: 58%;
+      top: 20px;
+    }
+    .right {
+      /* border: 2px solid yellow;*/
+      display: inline-block;
+      position: absolute;
+      right: 34px;
+      top: 33px;
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 28px;
+      font-weight: bolder;
+    }
+    .navbar li a {
+      color: rgb(30, 0, 58);
+      text-decoration: none;
+      padding: 5px 27px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: #009e6f;
+    }
+    .btn {
+      margin: 0px 9px;
+      background-color: #385e1d;
+      color: white;
+      padding: 4px 14px;
+      border: 2px solid grey;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      font-family: "Baloo 2", cursive;
+    }
+    .btn:hover {
+      background-color: rgba(158, 237, 12, 0.127);
+      color: black;
+    }
+    .container {
+      /* border: 2px solid hotpink; */
+      margin: 31px 266px;
+      padding: 48px;
+      width: 38%;
+      /* border-radius: 28px; */
+      color: black;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      border: 2px solid black;
+      margin: 3px auto;
+      font-size: 25px;
+      border-radius: 8px;
+      font-family: "Baloo 2", cursive;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .container button {
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      border: 2px solid black;
+      margin: 3px auto;
+      font-size: 25px;
+      border-radius: 8px;
+      font-family: "Baloo 2", cursive;
+    }
+    button:hover{
+          color: antiquewhite;
+          background-color: brown;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="img/logo.png" alt="" />
+        <div>Crazy Fitness</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Prayagraj Now !</h1>
+      <form action="noaction.php" target="_blank">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Name" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Age" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Gender" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Locality" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your Contact details" />
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
